@@ -46,6 +46,9 @@ class Settings(BaseSettings):
     redis_password: str | None = None
     
     # Sandbox configuration
+    sandbox_provider: str = "docker"  # "docker" or "fly"
+    fly_api_token: str | None = None
+    fly_sandbox_app: str | None = None
     sandbox_address: str | None = None
     sandbox_image: str | None = None
     sandbox_name_prefix: str | None = None
