@@ -28,7 +28,7 @@ class Settings(BaseSettings):
     api_base: str | None = None
     
     # Model configuration
-    model_name: str = "gpt-4o"
+    model_name: str = "minimax/minimax-m2.7"
     model_provider: str = "openai"
     temperature: float = 0.7
     max_tokens: int = 2000
